@@ -35,3 +35,19 @@ title {
     width: 250px;
     height: 150px;
 }
+.shadow-box {
+    background-color: #FAF3F0 !important;
+}
+.content1, .content2 {
+    color: black;
+}
+.shadow1 {
+  background-color: #F8F6F4;
+}
+.modal{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.content1 {
+    font-weight: 600;
+    /* padding-left: 8%; */
+}
