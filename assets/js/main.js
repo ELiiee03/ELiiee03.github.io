@@ -231,5 +231,48 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
+  /* JavaScript code to animate progress bars
+const animateProgressBar = (progressBar, width) => {
+  progressBar.style.width = width + '%';
+};
+
+/Code to animate progress bars on page load
+window.addEventListener('load', function() {
+  document.querySelectorAll('.skill-mf .progress-bar').forEach(function(progressBar) {
+    // Get the desired width of the progress bar from its `aria-valuenow` attribute.
+    const desiredWidth = progressBar.getAttribute('aria-valuenow');
+
+    // Animate the progress bar to the desired width.
+    animateProgressBar(progressBar, desiredWidth);
+  });
+});*/
+/* JavaScript code to animate progress bars
+const animateProgressBar = (progressBar, width) => {
+  progressBar.style.width = width + '%';
+};
+
+// Code to animate progress bars on page load
+window.addEventListener('load', function() {
+  document.querySelectorAll('.skill-mf .progress-bar').forEach(function(progressBar) {
+    // Get the desired width of the progress bar from its `aria-valuenow` attribute.
+    const desiredWidth = progressBar.getAttribute('aria-valuenow');
+
+    // Animate the progress bar to the desired width.
+    animateProgressBar(progressBar, desiredWidth);
+  });
+});*/
+// JavaScript code to animate progress bars
+  const animateProgressBar = (progressBar, width) => {
+    progressBar.style.width = width + '%';
+  };
+
+  // Code to animate progress bars on page load
+   window.addEventListener('load', function() {
+    document.querySelectorAll('.skill-mf .progress-bar').forEach(function(progressBar) {
+      //const progressBar = document.querySelector('.progress-bar');
+      const desiredWidth = progressBar.getAttribute('aria-valuenow');
+      animateProgressBar(progressBar, desiredWidth);
+    });
+  });
 
 })()
