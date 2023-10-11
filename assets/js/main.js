@@ -276,31 +276,3 @@ window.addEventListener('load', function() {
   });
 
 })()
-// Define the options for the Intersection Observer
-  const options = {
-    root: null, // The viewport is the root
-    rootMargin: '0px',
-    threshold: 0.2, // Trigger when at least 20% of the target is visible
-  };
-
-  // Callback function for the Intersection Observer
-  const animateProgress = (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const progressBars = entry.target.querySelectorAll('.progress-bar');
-        progressBars.forEach(bar => {
-          const width = bar.getAttribute('aria-valuenow') + '%';
-          bar.style.width = width;
-        });
-        observer.unobserve(entry.target);
-      }
-    });
-  };
-  // Create an Intersection Observer
-  const observer = new IntersectionObserver(animateProgress, options);
-
-  // Target the skills section by its ID
-  const skillsSection = document.querySelector('#skills-section');
-  
-  // Observe the skills section
-  observer.observe(skillsSection);
