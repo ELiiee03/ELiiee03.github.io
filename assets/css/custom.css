@@ -37,6 +37,7 @@ title {
 }
 .shadow-box {
     background-color: #FAF3F0 !important;
+    animation: float-up 4s ease-in-out !important;
 }
 .content1, .content2 {
     color: black;
@@ -51,4 +52,114 @@ title {
 .content1 {
     font-weight: 600;
     /* padding-left: 8%; */
+}
+@keyframes float-up {
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes float-up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.animated-box {
+    background-color: #FAF3F0 !important;
+    animation: float-up 6s ease-in-out !important;
+}
+@keyframes float-down {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.animated-box1 {
+    background-color: #FAF3F0 !important;
+    animation: float-down 3s ease-in-out !important;
+}
+@keyframes animate-progress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 85%;
+        /* Adjust the final width based on your needs */
+    }
+}
+
+@keyframes animate-bootstrap-progress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+        /* Adjust the final width based on your needs */
+    }
+}
+@keyframes animate-laravel-progress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 1%;
+        /* Adjust the final width based on your needs */
+    }
+}
+@keyframes animate-js-progress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 2%;
+        /* Adjust the final width based on your needs */
+    }
+}
+@keyframes animate-graphics-progress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 75%;
+        /* Adjust the final width based on your needs */
+    }
+}
+
+/* Add keyframes for other skills as needed */
+
+.html-progress {
+    animation: animate-progress 7s ease-in-out;
+}
+
+.bootstrap-progress {
+    animation: animate-bootstrap-progress 7s ease-in-out;
+}
+.laravel-progress {
+    animation: animate-laravel-progress 7s ease-in-out;
+}
+.js-progress {
+    animation: animate-js-progress 7s ease-in-out;
+}
+.graphics-progress {
+    animation: animate-graphics-progress 7s ease-in-out;
+}
+.progress-bar {
+    width: 0;
+    transition: width 1s;
+    /* Add a smooth transition effect */
 }
